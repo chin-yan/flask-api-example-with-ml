@@ -16,4 +16,4 @@ def predict(input):
         tag1 = x['tag1']
         tag2 = x['tag2']
 
-    return str(tag1),str(tag2)
+    return str(tag1)
