@@ -22,4 +22,3 @@ def postInput():
 
     result = model.predict(globals.img)
     return str(result)
-    #return jsonify({'return': str(globals.img)})
