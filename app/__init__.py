@@ -1,6 +1,7 @@
 # -*- coding: UTF-8 -*-
 import app.model as model
 import numpy as np
+import globals
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
