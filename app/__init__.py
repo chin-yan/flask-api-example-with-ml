@@ -21,4 +21,4 @@ def postInput():
     input = str(x1)
 
     result = model.predict(input)
-    return str(result)
+    return jsonify({'result': str(result)})
