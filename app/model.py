@@ -4,9 +4,6 @@ import globals
 from pymongo import MongoClient
 from gridfs import GridFS
 
-globals.results=' '
-globals.count=0
-
 def predict(input):
     cluster = MongoClient("mongodb+srv://yan31:yan31@cluster0.xfxba5r.mongodb.net/?retryWrites=true&w=majority")
     db = cluster["ootdData"]
