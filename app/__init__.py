@@ -1,7 +1,6 @@
 # -*- coding: UTF-8 -*-
 import app.model as model
 import numpy as np
-import globals
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
@@ -19,7 +18,7 @@ def getResult():
 def postInput():
     insertValues = request.get_json()
     x1=insertValues['file_name']
-    globals.img = str(x1)
+    input = str(x1)
 
-    result = model.predict(globals.img)
+    result = model.predict(input)
     return str(result)
